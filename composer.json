@@ -1,0 +1,40 @@
+{
+    "name": "atanor/testbox",
+    "description": "Testing application",
+    "type": "application",
+    "authors": [
+        {
+            "name": "sophpie",
+            "email": "sop.beaupuis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "atanor/di" : "*",
+        "atanor/events" : "*"
+    },
+    "autoload" :
+    {
+        "psr-4" : {
+            "Atanor\\TestBox\\" : "src/Atanor/TestBox"
+        }
+    },
+    "repositories" : [
+        {
+            "type": "path",
+            "url" : "../atanor-di/"
+        },
+        {
+            "type": "path",
+            "url" : "../atanor-graph/"
+        },
+        {
+            "type": "path",
+            "url" : "../atanor-events/"
+        },
+        {
+            "type": "path",
+            "url" : "../atanor-core/"
+        }
+    ]
+}
